@@ -9,10 +9,11 @@ public class Drum : MonoBehaviour
     public float scaleIncreaseFactor = 1.2f;
     public float scaleDecreaseFactor = 0.8f;
     public float bounceForce = 5f;
+    public Vector3 topDirection = Vector3.up; // Specify the top direction
 
     private Vector3 startingScale;
     private Coroutine scaleCoroutine;
-    private Rigidbody rb;
+    private bool isTriggered = false;
 
     private void Start()
     {
@@ -24,19 +25,30 @@ public class Drum : MonoBehaviour
         }
 
         startingScale = objectToScale.localScale;
-        rb = GetComponent<Rigidbody>();
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerStay(Collider other)
     {
-        if (collision.gameObject.CompareTag("DrumStick"))
-        {
-            if (scaleCoroutine != null)
-                StopCoroutine(scaleCoroutine);
+        // Check if the entering object comes from the top direction
+        Vector3 enteringDirection = other.transform.position - transform.position;
+        float dotProduct = Vector3.Dot(enteringDirection.normalized, topDirection.normalized);
+        float threshold = Mathf.Cos(Mathf.Deg2Rad * 45f); // Adjust the threshold angle as desired
 
-            scaleCoroutine = StartCoroutine(ScaleObject());
-            rb.AddForce(collision.relativeVelocity.normalized * bounceForce, ForceMode.Impulse);
-            intrumentSound.PlayDrum(drumNumber);
+        if (dotProduct >= threshold)
+        {
+            if (!isTriggered)
+            {
+                isTriggered = true;
+                if (scaleCoroutine != null)
+                    StopCoroutine(scaleCoroutine);
+
+                scaleCoroutine = StartCoroutine(ScaleObject());
+                intrumentSound.PlayDrum(drumNumber);
+            }
+        }
+        else
+        {
+            isTriggered = false;
         }
     }
 
