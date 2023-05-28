@@ -17,13 +17,6 @@ public class Drum : MonoBehaviour
 
     private void Start()
     {
-        if (objectToScale == null)
-        {
-            Debug.LogError("Object to scale not assigned! Please assign the object in the Inspector.");
-            enabled = false; // Disable the script to prevent errors
-            return;
-        }
-
         startingScale = objectToScale.localScale;
     }
 
