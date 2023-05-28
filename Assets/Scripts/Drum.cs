@@ -27,29 +27,18 @@ public class Drum : MonoBehaviour
         startingScale = objectToScale.localScale;
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        // Check if the entering object comes from the top direction
-        Vector3 enteringDirection = other.transform.position - transform.position;
-        float dotProduct = Vector3.Dot(enteringDirection.normalized, topDirection.normalized);
-        float threshold = Mathf.Cos(Mathf.Deg2Rad * 45f); // Adjust the threshold angle as desired
-
-        if (dotProduct >= threshold)
-        {
-            if (!isTriggered)
-            {
+        if(other.CompareTag("DrumStick")){
                 isTriggered = true;
                 if (scaleCoroutine != null)
                     StopCoroutine(scaleCoroutine);
 
                 scaleCoroutine = StartCoroutine(ScaleObject());
                 intrumentSound.PlayDrum(drumNumber);
-            }
-        }
-        else
-        {
-            isTriggered = false;
-        }
+
+        }       
+        
     }
 
     private IEnumerator ScaleObject()
