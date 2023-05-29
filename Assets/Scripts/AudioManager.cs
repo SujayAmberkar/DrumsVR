@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    public AudioSource audioSource;
+    [SerializeField] public AudioClip[] songs;
+    private int currentSong = 0;
+
+    private void Start(){
+        audioSource = GetComponent<AudioSource>();
+    }
+    
+    public void SetCurrentSong(int newSong){
+        if(newSong>songs.Length){
+            currentSong = 0;
+        }
+        currentSong = newSong;
+        audioSource.clip = songs[currentSong];
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public int GetCurrentSong(){
+        return currentSong;
     }
+
+
 }
