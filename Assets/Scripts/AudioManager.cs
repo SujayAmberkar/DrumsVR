@@ -13,10 +13,15 @@ public class AudioManager : MonoBehaviour
     }
     
     public void SetCurrentSong(int newSong){
-        if(newSong>songs.Length){
+        Debug.Log(newSong);
+        if(newSong>=songs.Length){
             currentSong = 0;
+        }else if(newSong<0){
+            currentSong = songs.Length -1;
+        }else{
+            currentSong = newSong;
         }
-        currentSong = newSong;
+        
         audioSource.clip = songs[currentSong];
     }
 
