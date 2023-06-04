@@ -6,6 +6,7 @@ public class AudioManager : MonoBehaviour
 {
     public AudioSource audioSource;
     [SerializeField] public AudioClip[] songs;
+    [SerializeField] public Sprite[] albumArt;
     private int currentSong = 0;
 
     private void Start(){
