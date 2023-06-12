@@ -6,6 +6,7 @@ public class IntrumentSound : MonoBehaviour
 {
     [SerializeField] private AudioClip[] DrumSounds;
     private AudioSource audioSource;
+    public DrumSoundController drumSoundController;
 
     private void Start()
     {
@@ -14,6 +15,6 @@ public class IntrumentSound : MonoBehaviour
 
 
     public void PlayDrum(int drum){
-        audioSource.PlayOneShot(DrumSounds[drum]);
+        audioSource.PlayOneShot(drumSoundController.Drums[DrumTypeSelector.SelectedDrum].AudioClips[drum]);
     }
 }
