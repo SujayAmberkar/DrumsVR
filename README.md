@@ -14,7 +14,7 @@ Run following commands in git bash one by one
 
 ```bash
   git clone git@github.com:SujayAmberkar/DrumsVR.git
-  cd SynthVR
+  cd DrumsVR
 ```
 
 Open Unity Hub and locate the cloned folder and open it.
