@@ -1322,28 +1322,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Drums:
-  - Drum: Acoustic
-    AudioClips:
-    - {fileID: 8300000, guid: 5eb86f954eb40ec4bbc6f9a5f38dda8a, type: 3}
-    - {fileID: 8300000, guid: 0af2095f988194744b99de1df46a26e1, type: 3}
-    - {fileID: 8300000, guid: 9b6658b5685ede34fb54690e8286eb8c, type: 3}
-    - {fileID: 8300000, guid: 3b8cbf29194fe534dbda0fdb19fa45eb, type: 3}
-    - {fileID: 8300000, guid: d1cd008351a5bed4e9278c4711e8dae0, type: 3}
-    - {fileID: 8300000, guid: 44de864ab231f50498dc5108809b1c78, type: 3}
-    - {fileID: 8300000, guid: cd196ac10541cad4f8597ebaf63ba1c1, type: 3}
-    - {fileID: 8300000, guid: 47c0c0ba3e4aad14281fbbe9f2503886, type: 3}
-    - {fileID: 8300000, guid: 0bf4b27e58a6c2d4a9a2be2844abbd2f, type: 3}
   - Drum: Electric
     AudioClips:
-    - {fileID: 8300000, guid: c5902f4d374578c428b213fc56e1c037, type: 3}
+    - {fileID: 8300000, guid: 8cf2e143503a59b458a54b26413f2fd6, type: 3}
     - {fileID: 8300000, guid: 7ae7780a81255374d851991fc1418f39, type: 3}
     - {fileID: 8300000, guid: 0ea163606ca4e434fab8e3ff3141e90f, type: 3}
     - {fileID: 8300000, guid: cd3145566c4003b4db36e2e165a156bc, type: 3}
     - {fileID: 8300000, guid: 4ce870303f290eb4e8a3b5387746a893, type: 3}
-    - {fileID: 8300000, guid: c179e9113cfcc6545beda3c4e4a367fd, type: 3}
-    - {fileID: 8300000, guid: 455f7de8f595b0543b64e1f1546be687, type: 3}
-    - {fileID: 8300000, guid: e86b503429b964a47bc8fb78ea9e57df, type: 3}
-    - {fileID: 8300000, guid: 41fb985b885a2354bba5325d0ea2f5de, type: 3}
+    - {fileID: 8300000, guid: a601120e19bc72a4caa365532583f11f, type: 3}
+    - {fileID: 8300000, guid: d2ada0f6b18bd0e46b52786da6e33fee, type: 3}
+    - {fileID: 8300000, guid: a5e1bbde5e0b85b4297f14206bc821a3, type: 3}
+    - {fileID: 8300000, guid: f66844dca529f6249876aadd2b792044, type: 3}
+  - Drum: Acoustic
+    AudioClips:
+    - {fileID: 8300000, guid: d1cd008351a5bed4e9278c4711e8dae0, type: 3}
+    - {fileID: 8300000, guid: 5eb86f954eb40ec4bbc6f9a5f38dda8a, type: 3}
+    - {fileID: 8300000, guid: 9b6658b5685ede34fb54690e8286eb8c, type: 3}
+    - {fileID: 8300000, guid: 3b8cbf29194fe534dbda0fdb19fa45eb, type: 3}
+    - {fileID: 8300000, guid: 0af2095f988194744b99de1df46a26e1, type: 3}
+    - {fileID: 8300000, guid: 44de864ab231f50498dc5108809b1c78, type: 3}
+    - {fileID: 8300000, guid: 47c0c0ba3e4aad14281fbbe9f2503886, type: 3}
+    - {fileID: 8300000, guid: 0bf4b27e58a6c2d4a9a2be2844abbd2f, type: 3}
+    - {fileID: 8300000, guid: da0d834811da40b44b5f83a24c45a8e8, type: 3}
 --- !u!4 &196023317
 Transform:
   m_ObjectHideFlags: 0
@@ -1612,7 +1612,7 @@ Transform:
   - {fileID: 859803417}
   - {fileID: 1020872514}
   m_Father: {fileID: 1767326065901300580}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -16.303, y: -119.778, z: 35.115}
 --- !u!1 &241590070
 GameObject:
@@ -3562,7 +3562,7 @@ Transform:
   - {fileID: 1509267460951858637}
   - {fileID: 940668421}
   m_Father: {fileID: 1767326065901300580}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 22.983, y: 79.668, z: -20.432}
 --- !u!1 &432750168
 GameObject:
@@ -3768,11 +3768,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 383844376930200205}
   - {fileID: 7515548921123620435}
+  - {fileID: 383844376930200205}
   - {fileID: 2337710377052796477}
   m_Father: {fileID: 1767326065901300580}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -0.614, y: -4.856, z: -27.417}
 --- !u!1 &442816451
 GameObject:
@@ -4004,17 +4004,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 9aa00410193e2a14eaf9bc18f5bbc5f8,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.99876314
+      value: 0.9986295
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9aa00410193e2a14eaf9bc18f5bbc5f8,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.049721323
+      value: -0.052335896
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9aa00410193e2a14eaf9bc18f5bbc5f8,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 5.7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9aa00410193e2a14eaf9bc18f5bbc5f8,
         type: 3}
@@ -4410,7 +4410,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5419,17 +5419,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 9aa00410193e2a14eaf9bc18f5bbc5f8,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.99876314
+      value: 0.9986295
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9aa00410193e2a14eaf9bc18f5bbc5f8,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.049721323
+      value: -0.052335896
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9aa00410193e2a14eaf9bc18f5bbc5f8,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 5.7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9aa00410193e2a14eaf9bc18f5bbc5f8,
         type: 3}
@@ -5853,7 +5853,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6636,7 +6636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intrumentSound: {fileID: 323494862}
-  drumNumber: 1
+  drumNumber: 4
 --- !u!54 &856494668
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7348,7 +7348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intrumentSound: {fileID: 323494862}
-  drumNumber: 5
+  drumNumber: 3
 --- !u!54 &940668427
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8039,7 +8039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intrumentSound: {fileID: 323494862}
-  drumNumber: 8
+  drumNumber: 6
 --- !u!64 &1020872517
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8199,7 +8199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intrumentSound: {fileID: 323494862}
-  drumNumber: 7
+  drumNumber: 5
 --- !u!64 &1041275976
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9126,7 +9126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intrumentSound: {fileID: 323494862}
-  drumNumber: 3
+  drumNumber: 2
 --- !u!54 &1110918759
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11396,7 +11396,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: c0d8a6e5693229e4288a6be715c0ba24, type: 2}
+      objectReference: {fileID: 2100000, guid: dafaa339cb30c104083111e64adf601a, type: 2}
     - target: {fileID: 7962951531576482852, guid: 4959a5efc0163fd48a918467a34be087,
         type: 3}
       propertyPath: m_Mesh
@@ -13151,7 +13151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intrumentSound: {fileID: 323494862}
-  drumNumber: 2
+  drumNumber: 1
 --- !u!54 &1538931994
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13837,7 +13837,7 @@ Transform:
   - {fileID: 1604197685}
   - {fileID: 1041275973}
   m_Father: {fileID: 1767326065901300580}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -22.836, y: -164.973, z: 55.608}
 --- !u!1 &1577434356
 GameObject:
@@ -15111,6 +15111,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4d5ae5cb7863e5440a00db75b82ed6d6,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4d5ae5cb7863e5440a00db75b82ed6d6,
         type: 3}
       propertyPath: m_Name
@@ -15157,7 +15162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intrumentSound: {fileID: 323494862}
-  drumNumber: 9
+  drumNumber: 7
 --- !u!54 &1680028609
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18472,7 +18477,7 @@ Transform:
   - {fileID: 5886176768284179280}
   - {fileID: 5098064477372287894}
   m_Father: {fileID: 1767326065901300580}
-  m_RootOrder: 0
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 13.341}
 --- !u!33 &256429555151464385
 MeshFilter:
@@ -18724,7 +18729,7 @@ Transform:
   - {fileID: 7354308166971786239}
   - {fileID: 1110918753}
   m_Father: {fileID: 441570691}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &392840145010693312
 MeshFilter:
@@ -22626,14 +22631,14 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 244994166149220839}
-  - {fileID: 413909290}
-  - {fileID: 441570691}
   - {fileID: 8055907947976234590}
+  - {fileID: 441570691}
+  - {fileID: 413909290}
   - {fileID: 4198593111646115902}
-  - {fileID: 2219308233423768510}
-  - {fileID: 237830660}
   - {fileID: 1574695119}
+  - {fileID: 237830660}
+  - {fileID: 2219308233423768510}
+  - {fileID: 244994166149220839}
   m_Father: {fileID: 235957683}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -23666,7 +23671,7 @@ Transform:
   - {fileID: 7634298526511450758}
   - {fileID: 1680028603}
   m_Father: {fileID: 1767326065901300580}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -9.517, y: -125.029, z: 20.566}
 --- !u!33 &2241881258842639149
 MeshFilter:
@@ -28310,7 +28315,7 @@ Transform:
   - {fileID: 5469187520819405806}
   - {fileID: 856494662}
   m_Father: {fileID: 1767326065901300580}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 12.023, y: -0.685, z: -16.586}
 --- !u!23 &4206200856450980320
 MeshRenderer:
@@ -36567,7 +36572,7 @@ Transform:
   - {fileID: 4233335833528470498}
   - {fileID: 1538931988}
   m_Father: {fileID: 441570691}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &7535447362646862936
 MeshRenderer:
@@ -37712,7 +37717,7 @@ Transform:
   - {fileID: 8863431370299456600}
   - {fileID: 149626568}
   m_Father: {fileID: 1767326065901300580}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 3.764, y: -6.927, z: -35.106}
 --- !u!23 &8071684381989568191
 MeshRenderer:

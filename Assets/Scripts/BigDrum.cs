@@ -27,7 +27,7 @@ public class BigDrum : MonoBehaviour
     void Update()
     {
         if(leftActivate.action.IsPressed() && once){
-            intrumentSound.PlayDrum(6);
+            intrumentSound.PlayDrum(8);
             once = false;
             if (scaleCoroutine != null)
                     StopCoroutine(scaleCoroutine);
