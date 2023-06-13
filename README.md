@@ -10,7 +10,7 @@ Download & Install Git,Unity Version 2021.3.19f1.
 Run following commands in git bash one by one
 
 ```bash
-  git clone git@github.com:SujayAmberkar/SynthVR.git
+  git clone git@github.com:SujayAmberkar/DrumsVR.git
   cd SynthVR
 ```
 
